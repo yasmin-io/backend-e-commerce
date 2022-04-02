@@ -33,14 +33,13 @@ router.get("/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
-      include:
-        ({
+      include: [
+        Category,
+        {
           model: Tag,
           through: ProductTag,
         },
-        {
-          model: Category,
-        }),
+      ],
     });
     res.status(200).json(oneProduct);
   } catch (err) {
@@ -117,7 +116,8 @@ router.put("/:id", (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
+
       res.status(400).json(err);
     });
 });
