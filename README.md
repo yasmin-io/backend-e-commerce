@@ -33,7 +33,7 @@ The video will demonstrate the following:
 - GET routes for a single category, a single product, and a single tag being tested in Insomnia.
 - POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia.
 
-Click here for the Link to my Walkthrough Video: [Walkthrough](https://youtu.be/kJvmJDBykBg)
+Click here for the Link to my Walkthrough Video: [Walkthrough](https://youtu.be/tX3zq3rCL_I)
 
 ---
 
